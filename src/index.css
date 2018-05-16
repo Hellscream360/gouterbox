@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url("https://projetitescia.ovh/wp-content/uploads/2017/12/IMG_20171213_151831.jpg") no-repeat center fixed; 
+  background: url("./img/cover.jpg") no-repeat center fixed; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover;
 }

@@ -1,17 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import AuthUserContext from "./AuthUserContext";
+import SignOutButton from './SignOut';
 import * as routes from "../constants/routes";
 
 const Navigation = () => 
-    <div className="navigation-menu">
-        <ul>
-            <li className="liSign"><Link to={routes.SIGN_UP}>S'enregistrer</Link></li>
-            <li className="liSign"><Link to={routes.SIGN_IN}>Se connecter</Link></li>
-            <li className="liMenu"><Link to={routes.LANDING}>Mon gouter</Link></li>
-            <li className="liMenu"><Link to={routes.HOME}>Acceuil</Link></li>
-            <li className="liSign"><Link to={routes.ACCOUNT}>Mon compte</Link></li>
-        </ul>
-    </div>
+    <AuthUserContext.Consumer>
+        {
+            authUser => authUser ?
+                <div className="navigation-menu">
+                    <NavigationAuth />
+                </div> :
+                <div className="navigation-menu">
+                    <NavigationNonAuth />
+                </div>
+        }
+    </AuthUserContext.Consumer>
+
+const NavigationAuth = () =>
+    <ul>
+        <li className="liSign"><SignOutButton /></li>
+        <li className="liMenu"><Link to={routes.LANDING}>Mon gouter</Link></li>
+        <li className="liMenu"><Link to={routes.HOME}>Acceuil</Link></li>
+        <li className="liSign"><Link to={routes.ACCOUNT}>Mon compte</Link></li>
+    </ul>
+
+const NavigationNonAuth = () =>
+    <ul>
+        <li className="liMenu"><Link to={routes.LANDING}>Mon gouter</Link></li>
+        <li className="liSign"><Link to={routes.SIGN_UP}>S'enregistrer</Link></li>
+        <li className="liSign"><Link to={routes.SIGN_IN}>Se connecter</Link></li>
+    </ul>
 
 export default Navigation;
