@@ -5,7 +5,7 @@ import * as routes from "../constants/routes";
 
 const SignUp = ({ history }) =>
   <div className="container">
-    <h1>Sign up</h1>
+    <h1>S'enregistrer</h1>
     <SignUpForm history={history} />
   </div>
 
@@ -13,7 +13,7 @@ const SignUpLink = () =>
   <p>
     Don't have an account ?
     {" "}
-    <Link to={routes.SIGN_UP}>Sign up</Link>
+    <Link to={routes.SIGN_UP}>S'enregistrer</Link>
   </p>
 
 const INITIAL_STATE = {
@@ -94,19 +94,19 @@ class SignUpForm extends React.Component {
           className="form-control"
           value={passwordOne}
           onChange={event => this.setState(byPropKey("passwordOne", event.target.value))}
-          placeholder="Password"
+          placeholder="Mot de passe"
           type="password"
         />
         <input
           className="form-control"
           value={passwordTwo}
           onChange={event => this.setState(byPropKey("passwordTwo", event.target.value))}
-          placeholder="Confirm password"
+          placeholder="Confirmez le mot de passe"
           type="password"
         />
         <hr/>
         <button className="btn btn-primary" disabled={isInvalid} type="submit">
-          Sign up
+          S'enregistrer
         </button>
 
         { error && <p>{error.message}</p> }
