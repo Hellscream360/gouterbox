@@ -27,3 +27,11 @@ ul > li.liSign{
 ul > li.liMenu{
   float: left;
 }
+
+input.form-control{
+  margin: 10px 0 10px 0;
+}
+
+.container > h1 {
+  margin-bottom: 20px;
+}

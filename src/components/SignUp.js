@@ -77,30 +77,35 @@ class SignUpForm extends React.Component {
     return (
       <form onSubmit={this.onSubmit}>
         <input
+          className="form-control"
           value={username}
           onChange={event => this.setState(byPropKey("username", event.target.value))}
           placeholder="Username"
           type="text"
         />
         <input
+          className="form-control"
           value={email}
           onChange={event => this.setState(byPropKey("email", event.target.value))}
           placeholder="Email"
           type="text"
         />
         <input
+          className="form-control"
           value={passwordOne}
           onChange={event => this.setState(byPropKey("passwordOne", event.target.value))}
           placeholder="Password"
           type="password"
         />
         <input
+          className="form-control"
           value={passwordTwo}
           onChange={event => this.setState(byPropKey("passwordTwo", event.target.value))}
           placeholder="Confirm password"
           type="password"
         />
-        <button disabled={isInvalid} type="submit">
+        <hr/>
+        <button className="btn btn-primary" disabled={isInvalid} type="submit">
           Sign up
         </button>
 
