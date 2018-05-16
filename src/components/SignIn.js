@@ -8,9 +8,7 @@ import PasswordChange from './PasswordChange';
 
 const SignIn = ({ history }) =>
   <div className="container">
-    <h1>Se connecter</h1>
     <SignInForm history={history} />
-    <SignUpLink />
   </div>
 
 const byPropKey = (propertyName, value) => () => ({
@@ -64,7 +62,8 @@ class SignInForm extends React.Component {
     const isInvalid = password === "" || email === "";
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} className="blackMask">
+        <h1>Se connecter</h1>
         <input
           className="form-control"
           value={email}
@@ -79,11 +78,12 @@ class SignInForm extends React.Component {
           type="password"
           placeholder="Mot de passe"
         />
-        <button className="btn btn-primary" disabled={isInvalid} type="submit">
-          Se connecter
+        <button className="btn btn-primary btn-lg formSign" disabled={isInvalid} type="submit">
+          C'est parti !
         </button>
 
         { error && <p>{error.message}</p> }
+        <SignUpLink />
       </form>
     );
   }

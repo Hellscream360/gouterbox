@@ -1,8 +1,9 @@
 import React from 'react';
+import LandingPage from "./LandingPage";
 
 const Landing = () =>
   <div className="container">
-    <h1>Mon goûter</h1>
+    <LandingPage />
   </div>
 
 export default Landing;
