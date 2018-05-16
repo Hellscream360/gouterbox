@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Account = () =>
-  <div>
+  <div className="container">
     <h1>My account</h1>
   </div>
 

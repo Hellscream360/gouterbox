@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PasswordForget = () =>
-  <div>
+  <div className="container">
     <h1>Password forget</h1>
   </div>
 

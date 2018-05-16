@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 //JS
-import Header from "./components/Header";
-import Connexion from "./components/Connexion";
 import Navigation from "./components/Navigation";
 import LandingPage from './components/Landing';
 import SignUpPage from './components/SignUp';
@@ -22,7 +20,6 @@ class App extends Component {
       <Router>
         <div>
           <Navigation />
-          <hr/>
 
           <Route
             exact path={routes.LANDING}
