@@ -9,5 +9,6 @@ const HomePage = () =>
 
 const authCondition = (authUser) => !!authUser;
 
-export default withAuthorization(authCondition)(HomePage);
-refs/remotes/origin/master
+// export default withAuthorization(authCondition)(HomePage);
+
+export default HomePage;

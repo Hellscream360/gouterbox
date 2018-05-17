@@ -109,3 +109,11 @@ ul > li.liMenu{
 button.formSign {
   width: 340px;
 }
+
+div.card {
+  background-color: grey;
+}
+
+div.card-body {
+  background-color: white;
+}

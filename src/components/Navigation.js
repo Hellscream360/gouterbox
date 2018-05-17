@@ -33,6 +33,7 @@ const NavigationNonAuth = () =>
         <li className="liMenu"><Link to={routes.LANDING}><img src={logo} id="header_logo" alt="Mon goûter logo" width="80" height="50"/></Link></li>
         <li className="liSign"><Link to={routes.SIGN_UP}>S'enregistrer</Link></li>
         <li className="liSign"><Link to={routes.SIGN_IN}>Se connecter</Link></li>
+        <li className="liMenu"><Link to={routes.HOME}>Acceuil</Link></li>
     </ul>
 
 export default Navigation;
