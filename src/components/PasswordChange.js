@@ -46,9 +46,11 @@ class PasswordChangeForm extends React.Component {
     const isInvalid = passwordOne !== passwordTwo || passwordOne === "";
     
     return (
-      <form onSubmit={this.onSubmit} className="form-control">
+      <form onSubmit={this.onSubmit} className="blackMask">
+        <h1>Changer de mot de passe</h1>
         <input
           value={passwordTwo}
+          className="form-control"
           onChange={event => this.setState(byPropKey("passwordOne", event.target.value))}
           type="password"
           placeholder="Confirmez le nouveau mot de passe"

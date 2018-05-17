@@ -23,8 +23,8 @@ const Navigation = () =>
 const NavigationAuth = () =>
     <ul>
         <li className="liSign"><SignOutButton /></li>
-        <li className="liMenu"><Link to={routes.LANDING}><img src={logo} id="header_logo" alt="Mon goûter logo" width="80" height="50"/>Mon gouter</Link></li>
-        <li className="liMenu"><Link to={routes.HOME}>Acceuil</Link></li>
+        <li className="liMenu"><Link to={routes.LANDING}><img src={logo} id="header_logo" alt="Mon goûter logo" width="80" height="50"/></Link></li>
+        <li className="liMenu"><Link to={routes.HOME}>Créer un goûter</Link></li>
         <li className="liSign"><Link to={routes.ACCOUNT}>Mon compte</Link></li>
     </ul>
 

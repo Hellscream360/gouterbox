@@ -39,7 +39,7 @@ class SignInForm extends React.Component {
       history
     } = this.props;
 
-    auth.doSignInWithEmailAndPassword(email, PasswordChange)
+    auth.doSignInWithEmailAndPassword(email, password)
       .then(() => {
         this.setState(() => ({
           ...INITIAL_STATE
