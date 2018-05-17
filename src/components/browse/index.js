@@ -3,18 +3,23 @@ import unknown from '../../img/person-profile.png';
 
 class Browse extends React.Component {
     render() {
+        function handleClick(e) {
+            e.preventDefault();
+            console.log("click");
+        }
+        
         return (
             <div className="container">
                 <h1>Selection du profil</h1>
                 <div className="row justify-content-center">
                     <div className="col-4">
-                        <div className="card">
+                        <div className="card" onClick={ handleClick }>
                             <img class="card-img-top" src={unknown} alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">Kevin</h5>
                             </div>
                         </div>
-                    </div>
+                    </div>    
                     <div className="col-4">
                         <div className="card">
                             <img class="card-img-top" src={unknown} alt="" />

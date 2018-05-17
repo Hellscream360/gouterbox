@@ -112,8 +112,19 @@ button.formSign {
 
 div.card {
   background-color: grey;
+  cursor: pointer;
+}
+
+div.card:hover {
+  cursor: pointer;
+  border:2px solid black;
+  
 }
 
 div.card-body {
   background-color: white;
+
+}
+div.avatar-wrapper {
+  position: relative;
 }
