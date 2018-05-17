@@ -21,17 +21,17 @@ class PasswordChangeForm extends React.Component {
     };
   }
 
-    onSubmit = (event) => {
-      const { passwordOne } = this.state;
+  onSubmit = (event) => {
+    const { passwordOne } = this.state;
 
-      auth.doPasswordUpdate(passwordOne)
-        .then(() => {
-          this.setState(() => ({...INITIAL_STATE }));
-        })
-        .catch(error => {
-          this.setState(byPropKey("error", error));
-        }
-      );
+    auth.doPasswordUpdate(passwordOne)
+      .then(() => {
+        this.setState(() => ({...INITIAL_STATE }));
+      })
+      .catch(error => {
+        this.setState(byPropKey("error", error));
+      }
+    );
 
     event.preventDefault();
   }

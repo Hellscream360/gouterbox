@@ -9,7 +9,7 @@ const HomePage = () =>
 
 const authCondition = (authUser) => !!authUser;
 
-export default HomePage; //To be changed by the following sentence
+//export default HomePage; //To be changed by the following sentence
 
-// export default withAuthorization(authCondition)(HomePage);
+export default withAuthorization(authCondition)(HomePage);
 
