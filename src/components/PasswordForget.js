@@ -48,14 +48,16 @@ class PasswordForgetForm extends React.Component {
     const isInvalid = email === "";
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} className="blackMask">
         <input
           value={this.state.email}
           onChange={event => this.setState(byPropKey("email", event.target.value))}
           type="text"
+          className="form-control"
           placeholder="Email"
+          required
         />
-        <button disabled={isInvalid} type="submit">
+        <button className="btn btn-primary btn-lg btnForm" disabled={isInvalid} type="submit">
           Changer mon mot de passe
         </button>
 

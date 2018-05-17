@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 
 import { SignUpLink } from "./SignUp";
+import { PasswordForgetLink } from "./PasswordForget";
 import { auth } from "../firebase";
 import * as routes from "../constants/routes";
 import PasswordChange from './PasswordChange';
@@ -9,6 +10,7 @@ import PasswordChange from './PasswordChange';
 const SignIn = ({ history }) =>
   <div className="container">
     <SignInForm history={history} />
+    <PasswordForgetLink />
   </div>
 
 const byPropKey = (propertyName, value) => () => ({
