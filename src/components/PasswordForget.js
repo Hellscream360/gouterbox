@@ -57,7 +57,7 @@ class PasswordForgetForm extends React.Component {
           placeholder="Email"
           required
         />
-        <button className="btn btn-primary btn-lg btnForm" disabled={isInvalid} type="submit">
+        <button className="btn btn-primary btn-lg formSign" disabled={isInvalid} type="submit">
           Changer mon mot de passe
         </button>
 

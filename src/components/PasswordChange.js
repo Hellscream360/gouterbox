@@ -54,7 +54,7 @@ class PasswordChangeForm extends React.Component {
           placeholder="Confirmez le nouveau mot de passe"
           required
         />
-        <button disabled={isInvalid} type="submit">
+        <button  className="btn btn-primary btn-lg formSign" disabled={isInvalid} type="submit">
           Reinitialiser mon mot de passe
         </button>
 
