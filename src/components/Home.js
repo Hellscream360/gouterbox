@@ -4,6 +4,7 @@ import Browse from './browse';
 
 const HomePage = () =>
   <div className="container">
+    <h1>Bonjour {this.state.authUser}</h1>
     <Browse />
   </div>
 
