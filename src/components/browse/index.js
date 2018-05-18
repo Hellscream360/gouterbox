@@ -4,12 +4,6 @@ import { Link, withRouter, Route } from "react-router-dom";
 import * as routes from "../../constants/routes";
 
 class Browse extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          
-        };
-      } 
 
     handleClick = event => {
         event.preventDefault();
@@ -27,7 +21,6 @@ class Browse extends React.Component {
     render() {
         return (
             <div className="container">
-                <h1>{this.props.name}, Selectionne ton profil</h1>
                 <div className="row justify-content-center">
                     <div className="col-sm-4">
                         <div className="card" id="1" onClick={e => this.handleClick(e)} ref={div => {this.idDiv=div}}>
