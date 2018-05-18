@@ -2,9 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url("./img/cover.jpg") no-repeat center fixed; 
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover;
+  /*background: url("./img/cover.jpg") no-repeat center fixed; 
+  /*-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  /*background-size: cover;*/
+  background-color: #ff7400 !important;
 }
 
 div.container{
@@ -47,9 +48,9 @@ form > p {
 }
 
 div.blackMask {
-  border: 3px solid white;
+  border: 3px solid #fff;
   border-radius: 10px;
-  background-color: RGBA(0, 0, 0, 0.5);
+  background-color: RGBA(255, 170, 0, 0.5);
   padding: 40px;
   margin-top: 60px;
   color: #eee;
