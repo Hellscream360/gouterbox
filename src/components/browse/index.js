@@ -6,12 +6,6 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faPlus from '@fortawesome/fontawesome-free-solid/faPlus';
 
 class Browse extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          
-        };
-      } 
 
     handleClick = event => {
         event.preventDefault();
@@ -32,7 +26,6 @@ class Browse extends React.Component {
         }
         return (
             <div className="container">
-                <h1>{this.props.name}, Selectionne ton profil</h1>
                 <div className="row justify-content-center">
                     <div className="col-sm-4">
                         <div className="card" id="1" onClick={e => this.handleClick(e)} ref={div => {this.idDiv=div}}>
