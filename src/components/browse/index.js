@@ -2,6 +2,8 @@ import React from 'react';
 import unknown from '../../img/person-profile.png';
 import { Link, withRouter, Route } from "react-router-dom";
 import * as routes from "../../constants/routes";
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faPlus from '@fortawesome/fontawesome-free-solid/faPlus';
 
 class Browse extends React.Component {
     constructor(props) {
@@ -18,13 +20,16 @@ class Browse extends React.Component {
         console.log(id);
         //change url
         window.location= "/my-account"
-        //this.props.history.push(`/landing`)
-       
-        
+        //this.props.history.push(`/landing`)   
         //window.location = "";
     };
     
+    
     render() {
+        const style = {
+            height: "10vw",
+            width: "10vw"
+        }
         return (
             <div className="container">
                 <h1>{this.props.name}, Selectionne ton profil</h1>
@@ -45,17 +50,13 @@ class Browse extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-4">
+                    <div className="col-sm-4">    
                         <div className="card">
-                            <img className="card-img-top" src={unknown} alt="" />
-                            <div className="card-body">
-                                <h5 className="card-title">Alan</h5>
+                            <div className="icon">
+                            <FontAwesomeIcon className="fa-4x" style ={ style.height } icon={faPlus} />
                             </div>
-                        </div>
-                        <div className="card">
-                            <img className="card-img-top" src={unknown} alt="" />
                             <div className="card-body">
-                                <h5 className="card-title">Alan</h5>
+                                <h5 className="card-title">Ajouter un profil</h5>
                             </div>
                         </div>
                     </div>

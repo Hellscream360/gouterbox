@@ -36,7 +36,7 @@ const App = () =>
       <Route exact path={routes.PASSWORD_FORGET} component={() => <PasswordForgetPage />} />
       <Route exact path={routes.HOME} component={() => <HomePage />} />
       <Route exact path={routes.ACCOUNT} component={() => <AccountPage />} />
-      <Route exact path={routes.MY_ACCOUNT+ "id"} component={() => <MyAccount />} />
+      <Route exact path={routes.MY_ACCOUNT} component={() => <MyAccount />} />
     </div>
   </Router>
 
