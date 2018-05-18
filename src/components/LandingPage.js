@@ -3,7 +3,7 @@ import React from "react";
 class LandingPage extends React.Component {
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 <h1 className="center mainTitle">Mon goûter</h1>
 
                 <div className="blackMask">

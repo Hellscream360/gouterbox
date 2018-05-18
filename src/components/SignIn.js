@@ -10,7 +10,6 @@ import PasswordChange from './PasswordChange';
 const SignIn = ({ history }) =>
   <div className="container">
     <SignInForm history={history} />
-    <PasswordForgetLink />
   </div>
 
 const byPropKey = (propertyName, value) => () => ({
@@ -40,7 +39,7 @@ class SignInForm extends React.Component {
       history
     } = this.props;
 
-    auth.doSignInWithEmailAndPassword(email, PasswordChange)
+    auth.doSignInWithEmailAndPassword(email, password)
       .then(() => {
         this.setState(() => ({
           ...INITIAL_STATE
@@ -86,6 +85,7 @@ class SignInForm extends React.Component {
 
         { error && <p>{error.message}</p> }
         <SignUpLink />
+        <PasswordForgetLink />
       </form>
     );
   }

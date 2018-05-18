@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from "react-router-dom";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
 import * as routes from "../constants/routes";
 
 const SignUp = ({ history }) =>
@@ -48,6 +48,15 @@ class SignUpForm extends React.Component {
 
     auth.doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
+        //Create user in firebase db
+        db.doCreateUser(authUser.uid, username, email)
+          .then(() => {
+            this.setState(() => ({ ...INITIAL_STATE }));
+            history.push(routes.HOME);
+          })
+          .catch(error => {
+            this.setState(byPropKey('error', error));
+          });
         this.setState(() => ({...INITIAL_STATE}));
         history.push(routes.HOME);
       })
@@ -80,7 +89,7 @@ class SignUpForm extends React.Component {
           className="form-control"
           value={username}
           onChange={event => this.setState(byPropKey("username", event.target.value))}
-          placeholder="Username"
+          placeholder="Pseudo"
           type="text"
           required
         />
@@ -96,7 +105,7 @@ class SignUpForm extends React.Component {
           className="form-control"
           value={passwordOne}
           onChange={event => this.setState(byPropKey("passwordOne", event.target.value))}
-          placeholder="Password"
+          placeholder="Mot de passe"
           type="password"
           required
         />
@@ -104,7 +113,7 @@ class SignUpForm extends React.Component {
           className="form-control"
           value={passwordTwo}
           onChange={event => this.setState(byPropKey("passwordTwo", event.target.value))}
-          placeholder="Confirm password"
+          placeholder="Confirmation du mot de passe"
           type="password"
           required
         />
