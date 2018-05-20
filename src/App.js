@@ -19,8 +19,8 @@ import MyAccount from "./components/MyAccount";
 import * as routes from './constants/routes';
 
 //CSS
-import './App.css';
 import "./styles/css/bootstrap.min.css";
+import "./styles/fonts.css";
 
 //AUTH
 import withAuthentication from "./components/withAuthentication";
