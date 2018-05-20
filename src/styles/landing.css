@@ -41,6 +41,7 @@ div.headerstandard-inner > h1 {
     font-size: 84px;
     font-family: "grutch";
     color: orange;
+    text-shadow: 1px 1px 1px black;
 }
 
 .main h4 {
