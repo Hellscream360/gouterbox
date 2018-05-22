@@ -119,3 +119,23 @@ footer.footer {
     color: #d3d3d3;
     width: 100%;
 }
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .headerstandard {
+        display: none;
+    }
+    .main h1 {
+        font-size: 36px;
+    }
+    .main h4 {
+        font-size: 18px;
+    }
+    section.calltoaction div.masked-content > h1 {
+        font-size: 28px;
+    }
+}

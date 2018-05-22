@@ -143,3 +143,27 @@ div.icon {
   width: 100%;
   padding: 20px;
 }
+
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+      width: 100%;
+  }
+
+  div.navigation-menu > ul {
+    height: 200px;
+    padding: 0;
+    text-align: center;
+    line-height: inherit;
+  }
+
+  div.navigation-menu > ul li {
+    float: initial;
+    width: 100%;
+    line-height: 48px;
+    height: 48px;
+    margin: 0;
+  }
+}
