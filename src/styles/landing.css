@@ -9,11 +9,6 @@ div.container {
     padding-right: 0px;
 }
 
-.container.main {
-    scroll-snap-points-y: repeat(100%);
-    scroll-snap-type: proximity;
-}
-
 ul {
     margin-bottom: 0 !important;
 }
@@ -66,8 +61,23 @@ div.headerstandard-inner > h1 {
     height: 100px;
 }
 
-nav.menustandard a {
-    color: white;
+nav.menustandard :nth-child(1) {
+    color: #eaf90d;
+}
+nav.menustandard :nth-child(2) {
+    color: #8fee04;
+}
+nav.menustandard :nth-child(3) {
+    color: orange;
+}
+nav.menustandard :nth-child(4) {
+    color: #11dad3;
+}
+nav.menustandard :nth-child(5) {
+    color: #2e66ff;
+}
+nav.menustandard :nth-child(6) {
+    color: #fb460d;
 }
 
 .main section.presentation {
