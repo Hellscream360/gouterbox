@@ -10,9 +10,11 @@ import Contact from './landing/Contact';
 import Header from './landing/Header';
 import Separator from './landing/Separator';
 import Footer from './landing/Footer';
+import CallToAction from './landing/CallToAction';
 
 //CSS
 import "../styles/landing.css"
+
 
 const Landing = () =>
   <div className="container main">
@@ -20,9 +22,11 @@ const Landing = () =>
     <Presentation />
     <UniqueValue />
     <Products />
+    <CallToAction />
     <Team />
     <Contact />
     <TrustUs />
+    <CallToAction />
     <Footer />
   </div>
 
