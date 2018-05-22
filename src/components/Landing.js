@@ -15,19 +15,24 @@ import CallToAction from './landing/CallToAction';
 //CSS
 import "../styles/landing.css"
 
+class Landing extends React.Component {
 
-const Landing = () =>
-  <div className="container main">
-    <Header />
-    <Presentation />
-    <UniqueValue />
-    <Products />
-    <CallToAction />
-    <Team />
-    <Contact />
-    <TrustUs />
-    <CallToAction />
-    <Footer />
-  </div>
+  render() {
+    return (
+      <div className="container main">
+        <Header />
+        <Presentation />
+        <UniqueValue />
+        <Products />
+        <CallToAction />
+        <Team />
+        <TrustUs />
+        <Contact />
+        <CallToAction />
+        <Footer />
+      </div>
+    )
+  }
+}
 
 export default Landing;
