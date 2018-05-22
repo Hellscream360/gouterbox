@@ -15,7 +15,7 @@ import Footer from './landing/Footer';
 import "../styles/landing.css"
 
 const Landing = () =>
-  <div className="container main">
+  <div className="text-center main">
     <Header />
     <Presentation />
     <Separator />
