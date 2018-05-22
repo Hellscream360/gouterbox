@@ -15,20 +15,14 @@ import Footer from './landing/Footer';
 import "../styles/landing.css"
 
 const Landing = () =>
-  <div className="text-center main">
+  <div className="container main">
     <Header />
     <Presentation />
-    <Separator />
     <UniqueValue />
-    <Separator />
     <Products />
-    <Separator />
     <Team />
-    <Separator />
     <Contact />
-    <Separator />
     <TrustUs />
-    <Separator />
     <Footer />
   </div>
 
