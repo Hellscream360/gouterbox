@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "6"
+
+script:
+  - npm run build || exit 1
+ 
+after_success:
+  - npm run deploy $FTP_HOST $FTP_USERNAME $FTP_PASSWORD build www || exit 1
