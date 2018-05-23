@@ -21,40 +21,35 @@ class Browse extends React.Component {
     
     render() {
         const style = {
-            height: "10vw",
-            width: "10vw"
+            height: "19vw",
+            width: "15vw",
+            marginTop: "35px"
         }
         return (
-            <div className="container">
+            //<div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-sm-4">
-                        <div className="card" id="1" onClick={e => this.handleClick(e)} ref={div => {this.idDiv=div}}>
-                            <img className="card-img-top" src={unknown} alt="" />
-                            <div className="card-body">
-                                <h5 className="card-title">Kevin</h5>
-                            </div>
+                
+                    <div className="col-sm-4 col-md-3 col-lg-3 col-xs-12 card" id="1" onClick={e => this.handleClick(e)} ref={div => {this.idDiv=div}}>
+                        <img className="card-img-top" src={unknown} alt="" />
+                        <div className="card-body">
+                            <h5 className="card-title">Kevin</h5>
                         </div>
                     </div>
-                    <div className="col-sm-4">
-                        <div className="card">
-                            <img className="card-img-top" src={unknown} alt="" />
-                            <div className="card-body">
-                                <h5 className="card-title">Benjamin</h5>
-                            </div>
+                    <div className="col-sm-4 col-md-3 col-lg-3 col-xs-12 card" id="1" onClick={e => this.handleClick(e)} ref={div => {this.idDiv=div}}>
+                        <img className="card-img-top" src={unknown} alt="" />
+                        <div className="card-body">
+                            <h5 className="card-title">Kevin</h5>
                         </div>
                     </div>
-                    <div className="col-sm-4">    
-                        <div className="card">
-                            <div className="icon">
-                            <FontAwesomeIcon className="fa-4x" style ={ style.height } icon={faPlus} />
-                            </div>
-                            <div className="card-body">
-                                <h5 className="card-title">Ajouter un profil</h5>
-                            </div>
+                    <div className="col-sm-4 col-md-3 col-lg-3 col-xs-12 card" id="1" onClick={e => this.handleClick(e)} ref={div => {this.idDiv=div}}>
+                        <img className="card-img-top" src={unknown} alt="" />
+                        <div className="card-body">
+                            <h5 className="card-title">Kevin</h5>
                         </div>
                     </div>
-                </div>
-            </div>
+                    </div>
+                
+           // </div>
         )
     };
     
