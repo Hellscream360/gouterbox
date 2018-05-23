@@ -1,7 +1,6 @@
 import React from 'react';
 import withAuthorization from "./withAuthorization";
 import Browse from './browse';
-import * as firebase from '../firebase';
 
 class HomePage extends React.Component {
   render()  {

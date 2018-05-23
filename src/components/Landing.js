@@ -8,7 +8,6 @@ import Products from './landing/Products';
 import Team from './landing/Team';
 import Contact from './landing/Contact';
 import Header from './landing/Header';
-import Separator from './landing/Separator';
 import Footer from './landing/Footer';
 import CallToAction from './landing/CallToAction';
 

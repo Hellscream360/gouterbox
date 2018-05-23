@@ -1,9 +1,5 @@
 import React from 'react';
 import unknown from '../../img/person-profile.png';
-import { Link, withRouter, Route } from "react-router-dom";
-import * as routes from "../../constants/routes";
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faPlus from '@fortawesome/fontawesome-free-solid/faPlus';
 
 class Browse extends React.Component {
 
@@ -14,21 +10,16 @@ class Browse extends React.Component {
         console.log(id);
         //change url
         window.location= "/my-account"
-        //this.props.history.push(`/landing`)   
+        //this.props.history.push(`/landing`)
         //window.location = "";
     };
-    
-    
+
+
     render() {
-        const style = {
-            height: "19vw",
-            width: "15vw",
-            marginTop: "35px"
-        }
         return (
             //<div className="container">
                 <div className="row justify-content-center">
-                
+
                     <div className="col-sm-4 col-md-3 col-lg-3 col-xs-12 card" id="1" onClick={e => this.handleClick(e)} ref={div => {this.idDiv=div}}>
                         <img className="card-img-top" src={unknown} alt="" />
                         <div className="card-body">
@@ -48,11 +39,11 @@ class Browse extends React.Component {
                         </div>
                     </div>
                     </div>
-                
+
            // </div>
         )
     };
-    
+
 }
 
 
