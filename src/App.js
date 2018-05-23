@@ -25,6 +25,9 @@ import "./styles/fonts.css";
 //AUTH
 import withAuthentication from "./components/withAuthentication";
 
+//COLORS
+import "./styles/palette.scss";
+
 const App = () =>
   <Router>
     <div>

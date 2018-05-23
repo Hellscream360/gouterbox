@@ -22,17 +22,17 @@ const Navigation = () =>
 
 const NavigationAuth = () =>
     <ul>
-        <li className="liSign"><SignOutButton /></li>
-        <li className="liMenu"><Link to={routes.LANDING}><img src={logo} id="header_logo" alt="Mon goûter logo" width="80" height="50"/></Link></li>
-        <li className="liMenu"><Link to={routes.HOME}>Créer son goûter</Link></li>
-        <li className="liSign"><Link to={routes.ACCOUNT}>Mon compte</Link></li>
+        <li className="liSign signout"><SignOutButton /></li>
+        <li className="liMenu landing"><Link to={routes.LANDING}><img src={logo} id="header_logo" alt="Mon goûter logo" width="80" height="50"/></Link></li>
+        <li className="liMenu home"><Link to={routes.HOME}>Créer son goûter</Link></li>
+        <li className="liSign account"><Link to={routes.ACCOUNT}>Mon compte</Link></li>
     </ul>
 
 const NavigationNonAuth = () =>
     <ul>
-        <li className="liMenu"><Link to={routes.LANDING}><img src={logo} id="header_logo" alt="Mon goûter logo" width="80" height="50"/></Link></li>
-        <li className="liSign"><Link to={routes.SIGN_UP}>S'enregistrer</Link></li>
-        <li className="liSign"><Link to={routes.SIGN_IN}>Se connecter</Link></li>
+        <li className="liMenu landing"><Link to={routes.LANDING}><img src={logo} id="header_logo" alt="Mon goûter logo" width="80" height="50"/></Link></li>
+        <li className="liSign sign_up"><Link to={routes.SIGN_UP}>S'enregistrer</Link></li>
+        <li className="liSign sign_in"><Link to={routes.SIGN_IN}>Se connecter</Link></li>
     </ul>
 
 export default Navigation;

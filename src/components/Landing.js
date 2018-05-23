@@ -10,20 +10,29 @@ import Contact from './landing/Contact';
 import Header from './landing/Header';
 import Separator from './landing/Separator';
 import Footer from './landing/Footer';
+import CallToAction from './landing/CallToAction';
 
 //CSS
 import "../styles/landing.css"
 
-const Landing = () =>
-  <div className="container main">
-    <Header />
-    <Presentation />
-    <UniqueValue />
-    <Products />
-    <Team />
-    <Contact />
-    <TrustUs />
-    <Footer />
-  </div>
+class Landing extends React.Component {
+
+  render() {
+    return (
+      <div className="container main">
+        <Header />
+        <Presentation />
+        <UniqueValue />
+        <Products />
+        <CallToAction />
+        <Team />
+        <TrustUs />
+        <Contact />
+        <CallToAction />
+        <Footer />
+      </div>
+    )
+  }
+}
 
 export default Landing;
