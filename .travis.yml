@@ -3,7 +3,7 @@ node_js:
   - "6"
 
 script:
-  - npm run build || exit 1
+  - npm run build
 
 after_success:
   - npm run publish $FTP_HOST $FTP_USERNAME $FTP_PASSWORD build www || exit 1
